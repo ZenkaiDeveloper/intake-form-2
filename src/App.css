@@ -1,33 +1,82 @@
-.App {
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.categories{
+  border-right: 1px solid black;
+  height: 100vh;
+  background-color: #a4b6e8;
+}
+
+.categories p{
+  width: 80%;
+  background-color:#eee;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.categories p:hover{
+  background-color: #666;
+}
+
+
+
+.main{
+  grid-column: 2/7;
+  background-color: #f4f4f4;
+}
+
+.category-btn{
+  font-size:2rem;
+  padding: 2.3rem;
+  display: block;
+  width: 80%;
+  margin:2rem auto;
+}
+
+.btn-danger{
+  float: right;
+  margin:1rem;
+  padding:1rem;
+}
+
+form{
+  text-align: center;
+  color: black;
+}
+
+.show-title{
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.labels{
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.message{
+  display: block;
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-danger{
+  display: block;
+  padding: 1rem;
+  width: 90%;
+  background-color: #0ba01f;
+  margin-top: 15rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.report{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.vaccine input{
+  margin:1rem;
 }
